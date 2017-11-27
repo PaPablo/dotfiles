@@ -85,9 +85,9 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
 export PATH=$PATH:/home/pablo/anaconda3/bin
-alias python=/home/pablo/anaconda3/bin/python
 
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/Devel
 source /usr/local/bin/virtualenvwrapper.sh
 alias config='/usr/bin/git --git-dir=/home/pablo/.cfg/ --work-tree=/home/pablo'
+alias zsh-config='nvim ~/.zshrc'
