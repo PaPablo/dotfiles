@@ -64,6 +64,13 @@ Plugin 'tpope/vim-surround'
 Plugin 'bling/vim-airline'
 
 Plugin 'jnurmine/Zenburn'
+
+" vim-javascript
+Plugin 'pangloss/vim-javascript'
+
+" Haskell Autocompletion
+Plugin 'eagletmt/neco-ghc'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
