@@ -32,6 +32,8 @@ Plugin 'VundleVim/Vundle.vim'
 
 " Ahora si los plugins mios
 Plugin 'scrooloose/nerdtree'
+" Git plugin nerdtree
+Plugin 'xuyuanp/nerdtree-git-plugin'
 Plugin 'kien/ctrlp.vim'
 " Plugin para completado de html
 Plugin 'mattn/emmet-vim'
@@ -70,6 +72,16 @@ Plugin 'pangloss/vim-javascript'
 
 " Haskell Autocompletion
 Plugin 'eagletmt/neco-ghc'
+
+" Auto Pairs
+Plugin 'jiangmiao/auto-pairs'
+
+" Git gutter
+Plugin 'airblade/vim-gitgutter'
+Plugin 'tpope/vim-git'
+
+" fuGITive
+Plugin 'tpope/vim-fugitive'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
