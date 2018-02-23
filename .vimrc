@@ -83,12 +83,19 @@ Plugin 'tpope/vim-git'
 " fuGITive
 Plugin 'tpope/vim-fugitive'
 
+" VimTEX
+Plugin 'lervag/vimtex'
+
+" Snippets
+Plugin 'SirVer/ultisnips'
+Plugin 'honza/vim-snippets'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
 
 
-filetype plugin indent on
+let g:javascript_opfirst=1
 " show existing tab with 4 spaces width
 set tabstop=4
 " when indenting with '>', use 4 spaces width
@@ -96,13 +103,13 @@ set shiftwidth=4
 " On pressing tab, insert 4 spaces
 set expandtab
 
-filetype indent on
-set smartindent
-set autoindent
 syntax enable
 
+set autoindent
+set smartindent
 set backspace=indent,eol,start
 
+filetype indent on
 set relativenumber
 set number
 set hidden
@@ -113,18 +120,19 @@ au InsertLeave * set nopaste
 
 " 256 colors
 if &term == "screen"
-  set t_Co=256
+    set t_Co=256
 endif
 
-" Custom made remaps
-" inoremap { {}<ESC>ci}
-" inoremap ( ()<ESC>ci)
-" inoremap " ""<ESC>ci"
-" inoremap [ []<ESC>ci]
-inoremap <C-s> <ESC>vbda<<ESC>pa></<ESC>pa><ESC>cit
-inoremap {<CR> {}<ESC>i<CR><ESC>O
 " Colorschemes
 colorscheme afterglow 
 
 autocmd BufRead,BufNewFile *.py let python_highlight_all=1
+
+" UltiSnips config
+" Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
+let g:UltiSnipsUsePythonVersion = 3
+let g:UltiSnipsExpandTrigger="<a-tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
 syntax on
