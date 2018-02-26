@@ -130,7 +130,6 @@ autocmd BufRead,BufNewFile *.py let python_highlight_all=1
 
 " UltiSnips config
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
-let g:UltiSnipsUsePythonVersion = 3
 let g:UltiSnipsExpandTrigger="<a-tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
