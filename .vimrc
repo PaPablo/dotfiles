@@ -35,13 +35,12 @@ Plugin 'scrooloose/nerdtree'
 " Git plugin nerdtree
 Plugin 'xuyuanp/nerdtree-git-plugin'
 Plugin 'kien/ctrlp.vim'
+
 " Plugin para completado de html
 Plugin 'mattn/emmet-vim'
-" Typescript
-Plugin 'leafgarland/typescript-vim'
 
-" Typescript indent
-Plugin 'jason0x43/vim-js-indent'
+" Nerd Commenter
+Plugin 'scrooloose/nerdcommenter'
 " Colorschemes
 " Plugin 'NewProggie/NewProggie-Color-Scheme'
 " Plugin 'nightsense/seabird'
@@ -90,12 +89,13 @@ Plugin 'lervag/vimtex'
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 
+" YouCompleteMe
+Plugin 'valloric/youcompleteme'
+
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
 filetype plugin indent on    " required
 
-
-let g:javascript_opfirst=1
 " show existing tab with 4 spaces width
 set tabstop=4
 " when indenting with '>', use 4 spaces width
@@ -105,11 +105,11 @@ set expandtab
 
 syntax enable
 
-set autoindent
-set smartindent
 set backspace=indent,eol,start
 
-filetype indent on
+set autoindent
+set smartindent
+
 set relativenumber
 set number
 set hidden
@@ -130,8 +130,6 @@ autocmd BufRead,BufNewFile *.py let python_highlight_all=1
 
 " UltiSnips config
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
-let g:UltiSnipsExpandTrigger="<a-tab>"
-let g:UltiSnipsJumpForwardTrigger="<c-b>"
-let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+let g:UltiSnipsExpandTrigger="<c-J>"
 
 syntax on
