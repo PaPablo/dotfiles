@@ -41,6 +41,7 @@ Plugin 'mattn/emmet-vim'
 
 " Nerd Commenter
 Plugin 'scrooloose/nerdcommenter'
+
 " Colorschemes
 " Plugin 'NewProggie/NewProggie-Color-Scheme'
 " Plugin 'nightsense/seabird'
@@ -90,7 +91,16 @@ Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 
 " YouCompleteMe
-Plugin 'valloric/youcompleteme'
+" Plugin 'valloric/youcompleteme'
+
+" JS
+Plugin 'othree/javascript-libraries-syntax.vim'
+
+" Vue
+Plugin 'posva/vim-vue'
+
+" Prolog
+Plugin 'adimit/prolog.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -127,7 +137,11 @@ endif
 colorscheme afterglow 
 
 autocmd BufRead,BufNewFile *.py let python_highlight_all=1
+autocmd BufRead,BufNewFile *.pl set filetype=prolog
+set colorcolumn=80
 
+map <Leader>sc = "cs\"\'ysa\'}ysi}%a static f%i "
+let @s = "cs\"\'ysa\'}ysi}%a static f%i "
 " UltiSnips config
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
 let g:UltiSnipsExpandTrigger="<c-J>"

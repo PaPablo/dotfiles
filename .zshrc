@@ -7,8 +7,7 @@
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="ys"
-# ZSH_THEME="ys-custom"
+ ZSH_THEME="ys-custom"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -85,7 +84,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 #
-export PATH=$PATH:/home/pablo/miniconda3/bin
+export PATH=$PATH:/home/pablo/miniconda3/bin:/home/pablo/.gem/ruby/2.3.0/bin
 export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
 
 export WORKON_HOME=$HOME/.virtualenvs
@@ -94,3 +93,7 @@ source /usr/local/bin/virtualenvwrapper.sh
 alias config='/usr/bin/git --git-dir=/home/pablo/.cfg/ --work-tree=/home/pablo'
 alias zsh-config='nvim ~/.zshrc'
 alias python=python3
+
+export VISUAL=vim
+export TVENVEDITOR='nvim -c NERDTree'
+export EDITOR=$VISUAL
