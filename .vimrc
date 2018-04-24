@@ -91,7 +91,7 @@ Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 
 " YouCompleteMe
-" Plugin 'valloric/youcompleteme'
+Plugin 'valloric/youcompleteme'
 
 " JS
 Plugin 'othree/javascript-libraries-syntax.vim'
@@ -101,6 +101,9 @@ Plugin 'posva/vim-vue'
 
 " Prolog
 Plugin 'adimit/prolog.vim'
+
+" Vim Pydocstring
+Plugin 'heavenshell/vim-pydocstring'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
@@ -140,8 +143,9 @@ autocmd BufRead,BufNewFile *.py let python_highlight_all=1
 autocmd BufRead,BufNewFile *.pl set filetype=prolog
 set colorcolumn=80
 
-map <Leader>sc = "cs\"\'ysa\'}ysi}%a static f%i "
 let @s = "cs\"\'ysa\'}ysi}%a static f%i "
+let @a = "T\"ysi\"}wysi}\'ysi}%wbwhi url f\'f\'a "
+
 " UltiSnips config
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
 let g:UltiSnipsExpandTrigger="<c-J>"
