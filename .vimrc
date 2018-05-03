@@ -149,5 +149,9 @@ let @a = "T\"ysi\"}wysi}\'ysi}%wbwhi url f\'f\'a "
 " UltiSnips config
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
 let g:UltiSnipsExpandTrigger="<c-J>"
+let g:UltiSnipsUsePythonVersion = 3
+
+map <Leader>f ma{V}gq'a
+
 
 syntax on
