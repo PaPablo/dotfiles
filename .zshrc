@@ -90,7 +90,7 @@ export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/Devel
 source ~/.local/bin/virtualenvwrapper.sh 
 
-export PATH=$PATH:/home/pablo/.local/bin/
+export PATH=$PATH:/home/pablo/.local/bin/:~/.cabal/bin
 alias config='/usr/bin/git --git-dir=/home/pablo/.cfg/ --work-tree=/home/pablo'
 
 export VISUAL=vim
