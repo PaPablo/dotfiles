@@ -41,6 +41,7 @@ Plugin 'mattn/emmet-vim'
 
 " Nerd Commenter
 Plugin 'scrooloose/nerdcommenter'
+Plugin 'eagletmt/ghcmod-vim'
 
 " Colorschemes
 " Plugin 'NewProggie/NewProggie-Color-Scheme'
@@ -58,6 +59,9 @@ Plugin 'danilo-augusto/vim-afterglow'
 
 " Autocompletion python
 Plugin 'davidhalter/jedi-vim'
+
+" Python indentation
+Plugin 'vim-scripts/indentpython.vim'
 
 " Surround
 Plugin 'tpope/vim-surround'
@@ -90,8 +94,10 @@ Plugin 'lervag/vimtex'
 Plugin 'SirVer/ultisnips'
 Plugin 'honza/vim-snippets'
 
+Plugin 'Shougo/vimproc.vim'
+
 " YouCompleteMe
-Plugin 'valloric/youcompleteme'
+"Plugin 'valloric/youcompleteme'
 
 " JS
 Plugin 'othree/javascript-libraries-syntax.vim'
@@ -151,7 +157,8 @@ let @a = "T\"ysi\"}wysi}\'ysi}%wbwhi url f\'f\'a "
 let g:UltiSnipsExpandTrigger="<c-J>"
 let g:UltiSnipsUsePythonVersion = 3
 
+" Format text to the textwidth stablished
 map <Leader>f ma{V}gq'a
 
-
+map <F3> :NERDTreeToggle<CR>                                                                           
 syntax on
