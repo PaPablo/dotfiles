@@ -54,13 +54,11 @@ local exit_code="%(?,,C:%{$fg[red]%}%?%{$reset_color%})"
 #
 PROMPT="
 %{$FG[white]%}[%*] \
-%(#,%{$bg[yellow]%}%{$FG[000]%}%n%{$reset_color%},%{$FG[092]%}%n) \
-%{$FG[142]%}@ \
-%{$FG[091]%}%m \
-%{$FG[142]%}in \
-%{$terminfo[bold]$FG[092]%}%~%{$reset_color%}\
+%(#,%{$bg[yellow]%}%{$FG[000]%}%n%{$reset_color%},%{$FG[162]%}%n) \
+%{$FG[132]%}%m \
+%{$terminfo[bold]$FG[025]%}%~%{$reset_color%}\
 ${hg_info}\
 ${git_info}\
  \
  $exit_code
-%{$terminfo[bold]$FG[093]%}λ.%{$reset_color%}"
+%{$FG[025]%}λ.%{$reset_color%}"
