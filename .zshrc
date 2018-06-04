@@ -94,5 +94,6 @@ export PATH=$PATH:/home/pablo/.local/bin/:~/.cabal/bin
 alias config='/usr/bin/git --git-dir=/home/pablo/.cfg/ --work-tree=/home/pablo'
 
 export VISUAL=vim
+export GITDIR=$HOME/gitrepos
 export TVENVEDITOR='nvim -c NERDTree'
 export EDITOR=$VISUAL
