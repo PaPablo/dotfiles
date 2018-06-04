@@ -44,7 +44,7 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'eagletmt/ghcmod-vim'
 
 " Colorschemes
-" Plugin 'NewProggie/NewProggie-Color-Scheme'
+Plugin 'NewProggie/NewProggie-Color-Scheme'
 " Plugin 'nightsense/seabird'
 " Plugin 'nightsense/vim-crunchbang'
 " Plugin 'zcodes/vim-colors-basic'
@@ -55,7 +55,10 @@ Plugin 'eagletmt/ghcmod-vim'
 " Plugin 'ayu-theme/ayu-vim'
 " Plugin 'carakan/new-railscasts-theme'
 Plugin 'danilo-augusto/vim-afterglow'
-" Plugin 'tomasiser/vim-code-dark'
+Plugin 'tomasiser/vim-code-dark'
+
+" Python mode
+Plugin 'klen/python-mode'
 
 " Autocompletion python
 Plugin 'davidhalter/jedi-vim'
@@ -97,7 +100,7 @@ Plugin 'honza/vim-snippets'
 Plugin 'Shougo/vimproc.vim'
 
 " YouCompleteMe
-"Plugin 'valloric/youcompleteme'
+Plugin 'valloric/youcompleteme'
 
 " JS
 Plugin 'othree/javascript-libraries-syntax.vim'
@@ -143,7 +146,7 @@ if &term == "screen"
 endif
 
 " Colorschemes
-colorscheme afterglow 
+colorscheme codedark
 
 autocmd BufRead,BufNewFile *.py let python_highlight_all=1
 autocmd BufRead,BufNewFile *.pl set filetype=prolog
@@ -151,6 +154,9 @@ set colorcolumn=80
 
 let @s = "cs\"\'ysa\'}ysi}%a static f%i "
 let @a = "T\"ysi\"}wysi}\'ysi}%wbwhi url f\'f\'a "
+
+" Converts strings into dict, must be one below the other
+let @d = "0ysiw\'y$A: pb~A,j@d@qj"
 
 " UltiSnips config
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
